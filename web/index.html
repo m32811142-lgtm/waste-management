@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>نقشه مخازن پسماند</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <style>
+        body {
+            font-family: Tahoma, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        #map {
+            height: 90vh;
+            width: 100%;
+        }
+
+        #filter {
+            padding: 10px;
+            background: #f0f0f0;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="filter">
+        فیلتر وضعیت:
+        <select id="statusFilter">
+            <option value="all">همه مخازن</option>
+            <option value="active">فقط فعال</option>
+            <option value="inactive">فقط غیرفعال</option>
+        </select>
+    </div>
+    <div id="map"></div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="map.js"></script>
+</body>
+
+</html>
